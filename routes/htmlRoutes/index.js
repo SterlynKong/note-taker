@@ -1,3 +1,4 @@
+// require dependencies - path and express Rouer method
 const path = require('path');
 const router = require('express').Router();
 
