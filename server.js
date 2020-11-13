@@ -18,8 +18,8 @@ app.use(express.urlencoded({ extended: true}));
 // serve static files
 app.use(express.static('public'));
 
-
-
+app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
 
 // start app instance on declared port
 app.listen(PORT, () => console.log('Listening on PORT:' + PORT));
