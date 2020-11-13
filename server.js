@@ -1,4 +1,9 @@
+// require dependency - express
 const express = require('express');
+// require dependency - html routes
+const htmlRoutes = require('./routes/htmlRoutes/index');
+// require dependency - api routes
+const apiRoutes = require('./routes/apiRoutes/apiRoutes');
 
 
 // create instance of app and declare port
@@ -17,4 +22,4 @@ app.use(express.static('public'));
 
 
 // start app instance on declared port
-app.listen(PORT, () => console.log('Listening on port:' + PORT));
+app.listen(PORT, () => console.log('Listening on PORT:' + PORT));
