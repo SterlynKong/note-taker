@@ -1,5 +1,5 @@
 # not3-tak3r
-  ![GitHub license](https://img.shields.io/badge/license-GPL 3.0-blue.svg)
+  ![GitHub license](https://img.shields.io/badge/license-GPL_3.0-blue.svg)
 
   ## Description:
   a simple note taking app
