@@ -22,4 +22,12 @@ router.post('/notes', (req, res) => {
 });
 
 
+router.delete('/notes/:id', (req, res) => {
+    store.deleteNote(req.params.id)
+        .then(() => res.json({ok: true}))
+        // rspond with error if action failed
+        .catch((err) => res.status(500).json(err));
+});
+
+
 module.exports = router;
